@@ -1,0 +1,31 @@
+.Chat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding: 8px;
+  overflow-y: auto;
+}
+
+.Message {
+  max-width: 85%;         
+  width: fit-content;       
+  padding: 0px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* USER → RIGHT */
+.Message[data-role="user"] {
+  align-self: flex-end;
+  background: #f3f3f3;
+  text-align: right;
+}
+
+/* ASSISTANT → LEFT */
+.Message[data-role="assistant"] {
+  align-self: flex-start;
+  background: #e9e9ff;
+}
