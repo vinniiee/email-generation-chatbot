@@ -27,7 +27,7 @@ export function Controls({ onSend }) {
       <div className={styles.TextAreaContainer}>
         <textarea
           className={styles.TextArea}
-          placeholder="Provide context for email..."
+          placeholder="Provide context for the email..."
           value={content}
           onChange={handleContentChange}
           onKeyDown={handleEnterPress}
